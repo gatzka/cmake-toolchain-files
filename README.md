@@ -1,2 +1,2 @@
 # cmake-toolchain-files
-A collection of toolchains file for cmake.
+A collection of toolchain files for cmake.
