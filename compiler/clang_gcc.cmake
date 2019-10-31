@@ -2,8 +2,8 @@ set(CMAKE_C_FLAGS_INIT "${CMAKE_C_FLAGS_INIT} -pipe -fno-common -Wall -Wextra -W
 
 set(COVERAGE_FLAGS "--coverage")
 
-set(ASAN_FLAGS "-g -fsanitize=address -fno-sanitize-recover=all -fno-omit-frame-pointer")
+set(ASAN_FLAGS "-fsanitize=address -fno-sanitize-recover=all -fno-omit-frame-pointer")
 
 # Don't use leak sanitizer and undefined behavior sanitizer in ctest CI for gcc. gcc does not write a logfile on which ctest relies on.
-set(LSAN_FLAGS "-g -fsanitize=leak -fno-sanitize-recover=all -fno-omit-frame-pointer")
-set(UBSAN_FLAGS "-g -fsanitize=undefined -fno-sanitize-recover=all -fno-omit-frame-pointer")
+set(LSAN_FLAGS "-fsanitize=leak -fno-sanitize-recover=all -fno-omit-frame-pointer")
+set(UBSAN_FLAGS "-fsanitize=undefined -fno-sanitize-recover=all -fno-omit-frame-pointer")
