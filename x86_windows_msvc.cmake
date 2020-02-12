@@ -1,0 +1,3 @@
+set(CMAKE_SYSTEM_NAME Windows)
+set(CMAKE_C_FLAGS_INIT "${CMAKE_C_FLAGS_INIT} /Wall /WX")
+
