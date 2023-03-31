@@ -3,7 +3,7 @@ set(COMMON_WARN_FLAGS "-pipe -fno-common -Wall -Wextra -Wshadow -Winit-self -Wca
 set(C_WARN_FLAGS "-Wmissing-prototypes -Wstrict-prototypes -Wold-style-definition")
 set(CXX_WARN_FLAGS "-Wctor-dtor-privacy -Wdeprecated-copy-dtor -Wnarrowing -Wnoexcept-type -Weffc++ -Wregister -Wold-style-cast -Woverloaded-virtual -Wsign-promo")
 
-set(COVERAGE_FLAGS "--coverage")
+set(COVERAGE_FLAGS "--coverage -fno-inline -fno-inline-small-function -fno-default-inline")
 set(PROFILE_FLAGS "-pg -fno-omit-frame-pointer")
 set(ASAN_FLAGS "-fsanitize=address -fno-sanitize-recover=all -fno-omit-frame-pointer")
 
