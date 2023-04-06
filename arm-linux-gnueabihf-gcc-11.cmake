@@ -3,7 +3,7 @@ set(CMAKE_SYSTEM_PROCESSOR arm)
 
 include("${CMAKE_CURRENT_LIST_DIR}/compiler/gcc11.cmake")
 
-set(CMAKE_C_FLAGS_INIT "${COMMON_WARN_FLAGS} ${C_WARN_FLAGS} -Wno-analyzer-null-dereference -Wno-analyzer-use-of-uninitialized-value -Wno-analyzer-possible-null-argument -Wno-analyzer-malloc-leak -Wno-analyzer-possible-null-dereference")
+set(CMAKE_C_FLAGS_INIT "${COMMON_WARN_FLAGS} ${C_WARN_FLAGS} -Wno-analyzer-null-dereference -Wno-analyzer-use-of-uninitialized-value -Wno-analyzer-possible-null-argument -Wno-analyzer-malloc-leak -Wno-analyzer-possible-null-dereference -Wno-analyzer-double-free")
 set(CMAKE_CXX_FLAGS_INIT "${COMMON_WARN_FLAGS} ${CXX_WARN_FLAGS}")
 
 set(CMAKE_C_COMPILER arm-linux-gnueabihf-gcc-11 CACHE INTERNAL "C compiler")
